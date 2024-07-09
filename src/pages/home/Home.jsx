@@ -3,7 +3,7 @@ import HeroSection from "../../components/home/HeroSection/HeroSection";
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-full flex flex-col">
       <HeroSection />
     </div>
   );
