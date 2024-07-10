@@ -28,6 +28,10 @@
     url("BesthiaDisplayRegular-ZV7VK.woff") format("woff");
 }
 
+.headingFont {
+  font-family: "Besthia Display Regular";
+}
+
 .sectionHeading {
   font-family: "Besthia Display Regular";
   font-weight: 400;
