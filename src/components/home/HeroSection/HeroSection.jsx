@@ -7,6 +7,7 @@ import image1 from "../../../assets/carousel/image1.png";
 
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { FiArrowDownRight } from "react-icons/fi";
 
 import {
   CarouselProvider,
@@ -48,17 +49,6 @@ const HeroSection = () => {
             <p>Book Now</p>
             <MdArrowOutward />
           </button>
-          <div className="flex justify-center w-full mt-[5rem]">
-            <div className="flex flex-col headingFont text-start">
-              <p className="text-[#FFBB00] pl-[10px]">3k+</p>
-              <p className="text-[#6D6D6D] pl-[10px]">Events</p>
-              <img
-                src={designImage5k}
-                alt="designImage"
-                className="w-[150px]"
-              />
-            </div>
-          </div>
         </div>
         <div className="w-[50%] h-fit bg-gray flex justify-center items-center relative">
           <img
@@ -71,6 +61,9 @@ const HeroSection = () => {
             naturalSlideHeight={80}
             totalSlides={3}
             className="w-[70%] absolute"
+            isPlaying={true}
+            interval={3000}
+            infinite={true}
           >
             <Slider>
               <Slide index={0}>
@@ -94,6 +87,21 @@ const HeroSection = () => {
               </div>
             </div>
           </CarouselProvider>
+        </div>
+      </div>
+      <div className="w-full flex px-[2rem]">
+        <div className="flex justify-center w-[50%]">
+          <div className="flex flex-col headingFont text-start">
+            <p className="text-[#FFBB00] pl-[10px]">3k+</p>
+            <p className="text-[#6D6D6D] pl-[10px]">Events</p>
+            <img src={designImage5k} alt="designImage" className="w-[150px]" />
+          </div>
+        </div>
+        <div className="flex justify-end w-[50%]">
+          <div className="border border-black border-[2px] rounded-full w-[100px] h-[100px] flex flex-col items-center justify-center">
+            <p className="text-[14px]">SEE OUR WORK</p>
+            <FiArrowDownRight />
+          </div>
         </div>
       </div>
     </div>
