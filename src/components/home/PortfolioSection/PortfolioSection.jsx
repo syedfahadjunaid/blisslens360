@@ -80,6 +80,10 @@ const PortfolioSection = () => {
         </div>
         <img src={HeadingImage} alt="HeadingImage" />
       </div>
+
+      <div className="flex flex-col items-center absolute bottom-[4rem]">
+        <img src={HeadingImage} alt="HeadingImage" />
+      </div>
     </div>
   );
 };
