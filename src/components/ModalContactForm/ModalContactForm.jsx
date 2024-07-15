@@ -6,6 +6,20 @@ const ModalContactForm = () => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState();
 
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "fit-content",
+    bgcolor: "transparent",
+    border: "none",
+    outline: "none",
+    boxShadow: 0,
+    // borderRadius: "20px",
+    // p: 4,
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -17,7 +31,7 @@ const ModalContactForm = () => {
     console.log(submitData);
   };
   return (
-    <div className="w-full h-full flex flex-col gap-[1rem] rounded-[10px] bg-gradient-to-r from-[#FFBB01] to-[#000000] p-[4px]">
+    <div className="w-[500px] max-md:w-fit h-full flex flex-col gap-[1rem] rounded-[10px] bg-gradient-to-r from-[#FFBB01] to-[#000000] p-[4px]">
       <div className="w-full h-full flex flex-col gap-[1rem] rounded-[10px] bg-white p-[2rem]">
         <img src={logo} alt="logo" className="w-[200px]" />
         <p className="text-[14px]">

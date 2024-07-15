@@ -9,23 +9,23 @@ import frameImage from "../../../assets/serviceSection/frame.png";
 
 const ServicesSection = () => {
   return (
-    <div className="w-[100%] h-full flex flex-col items-center justify-center gap-[2rem] py-[4rem] relative">
+    <div className="w-[100%] h-full flex flex-col items-center justify-center gap-[2rem] py-[4rem] relative max-md:py-[2rem]">
       <img
         src={servicedSectionBG}
         alt="section2BgImage"
-        className="w-full h-full"
+        className="w-full h-full max-md:hidden"
       />
-      <div className="w-[90%] h-full flex flex-col items-center justify-center gap-[2rem] absolute">
+      <div className="w-[90%] h-full flex flex-col items-center justify-center gap-[2rem] absolute max-md:relative">
         <div className="flex gap-[1rem] w-full">
-          <div className="sectionHeading flex flex-col items-start">
-            <h1 className="text-[70px] text-[#3D3D3D]">
+          <div className="sectionHeading flex flex-col items-start max-md:p-0 max-md:text-start">
+            <h1 className="text-[70px] text-[#3D3D3D] max-md:text-[40px]">
               Services We’re Offering
             </h1>
           </div>
         </div>
-        <div className="flex flex-col gap-[1rem] w-full p-[2rem]">
-          <div className="flex w-full gap-[1rem]">
-            <div className="w-[65%] h-full cursor-pointer relative flex items-center justify-center">
+        <div className="flex flex-col gap-[1rem] w-full p-[2rem] max-md:p-0">
+          <div className="flex w-full gap-[1rem] max-md:flex-col">
+            <div className="w-[65%] h-full cursor-pointer relative flex items-center justify-center max-md:w-full">
               <button className="bg-white bg-opacity-50 p-[1rem] rounded-full absolute">
                 Pre Wedding
               </button>
@@ -36,7 +36,7 @@ const ServicesSection = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[35%] h-full cursor-pointer relative flex items-center justify-center">
+            <div className="w-[35%] h-full cursor-pointer relative flex items-center justify-center max-md:w-full">
               <button className="bg-white bg-opacity-50 p-[1rem] rounded-full absolute">
                 Fashion
               </button>

@@ -1,4 +1,9 @@
 .App {
   text-align: center;
   width: 100%;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  overflow-x: hidden !important;
+  position: relative;
 }

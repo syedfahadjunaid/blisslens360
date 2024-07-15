@@ -33,7 +33,7 @@ const HeroSection = () => {
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: 500,
+    width: "fit-content",
     bgcolor: "transparent",
     border: "none",
     outline: "none",
@@ -52,16 +52,16 @@ const HeroSection = () => {
           backgroundPositionY: "8rem",
         }}
       >
-        <div className="flex justify-end w-full mt-[5rem] pr-[2rem]">
+        <div className="flex justify-end w-full mt-[5rem] pr-[2rem] max-md:hidden">
           <div className="flex flex-col headingFont text-start">
             <p className="text-[#FFBB00] pl-[10px]">5k+</p>
             <p className="text-[#6D6D6D] pl-[10px]">weddings</p>
             <img src={designImage5k} alt="designImage" className="w-[100px]" />
           </div>
         </div>
-        <div className="w-[90%] flex flex-row items-start">
-          <div className="w-[50%] flex flex-col gap-[1rem]">
-            <h1 className="headingFont text-[80px] text-start leading-[5rem]">
+        <div className="w-[90%] flex flex-row items-start max-md:flex-col max-md:gap-[2rem] max-md:mt-[7rem]">
+          <div className="w-[50%] flex flex-col gap-[1rem] max-md:w-full">
+            <h1 className="headingFont text-[80px] text-start leading-[5rem] max-md:text-[50px] max-md:leading-[3rem]">
               Crafting Everlasting Moments
             </h1>
             <p className="text-start text-[#4F4F4F]">
@@ -76,7 +76,7 @@ const HeroSection = () => {
               <MdArrowOutward />
             </button>
           </div>
-          <div className="w-[50%] h-fit bg-gray flex justify-center items-center relative">
+          <div className="w-[50%] h-fit bg-gray flex justify-center items-center relative max-md:w-full">
             <img
               src={heroCarouselFrame}
               className="w-[450px] h-[450px]"
@@ -86,7 +86,7 @@ const HeroSection = () => {
               naturalSlideWidth={100}
               naturalSlideHeight={80}
               totalSlides={3}
-              className="w-[70%] absolute"
+              className="w-[70%] absolute max-md:w-full"
               isPlaying={true}
               interval={3000}
               infinite={true}
@@ -115,7 +115,7 @@ const HeroSection = () => {
             </CarouselProvider>
           </div>
         </div>
-        <div className="w-full flex px-[2rem]">
+        <div className="w-full flex px-[2rem] items-center max-md:flex-col max-md:gap-[1rem]">
           <div className="flex justify-center w-[50%]">
             <div className="flex flex-col headingFont text-start">
               <p className="text-[#FFBB00] pl-[10px]">3k+</p>
@@ -127,7 +127,7 @@ const HeroSection = () => {
               />
             </div>
           </div>
-          <div className="flex justify-end w-[50%]">
+          <div className="flex justify-end w-[50%] max-md:justify-center">
             <div className="border border-black border-[2px] rounded-full w-[100px] h-[100px] flex flex-col items-center justify-center">
               <p className="text-[14px]">SEE OUR WORK</p>
               <FiArrowDownRight />

@@ -8,13 +8,13 @@ const AboutUsSection = () => {
       <img
         src={section2BgImage}
         alt="section2BgImage"
-        className="w-[90%] h-[90%]"
+        className="w-[90%] h-[90%] max-md:hidden"
       />
-      <div className="w-[80%] h-full flex items-center justify-center gap-[2rem] absolute">
-        <div className="flex flex-col gap-[1rem] w-[50%]">
+      <div className="w-[80%] h-full flex items-center justify-center gap-[2rem] absolute max-md:flex-col max-md:relative max-md:w-[90%]">
+        <div className="flex flex-col gap-[1rem] w-[50%] max-md:w-full">
           <div className="sectionHeading flex flex-col items-start">
             <h1 className="text-[70px] text-[#3D3D3D]">About us</h1>
-            <h4 className="text-[18px] text-[#4F4F4F]">
+            <h4 className="text-[18px] text-[#4F4F4F] max-md:text-start">
               Welcome to Blisslens – Where Moments Become Timeless
             </h4>
           </div>
@@ -33,7 +33,7 @@ const AboutUsSection = () => {
             love, beauty, and life.
           </p>
         </div>
-        <div className="flex w-[50%]">
+        <div className="flex w-[50%] max-md:w-full">
           <img src={section2Img} className="w-[100%]" alt="section2Img" />
         </div>
       </div>
