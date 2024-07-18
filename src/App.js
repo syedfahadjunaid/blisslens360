@@ -1,15 +1,11 @@
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useEffect, useRef, useState } from "react";
 
-import HeroSection from "./components/home/HeroSection/HeroSection";
-import AboutUsSection from "./components/home/AboutUsSection/AboutUsSection";
-import ServicesSection from "./components/home/ServicesSection/ServicesSection";
-import PortfolioSection from "./components/home/PortfolioSection/PortfolioSection";
-import ClientsSection from "./components/home/ClientsSection/ClientsSection";
-import ContactSection from "./components/home/ContactSection/ContactSection";
+import Home from "./pages/Home/Home";
+import Portfolio from "./pages/Portfolio/Portfolio";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
 
 function App() {
   // const [open, setOpen] = React.useState(false);
@@ -33,23 +29,26 @@ function App() {
   }, [link]);
 
   return (
-    <div className="App flex flex-col gap-[0rem] items-center">
-      <Navbar setLink={setLink} link={link} />
-      <div className="w-full flex flex-col items-center gap-[2rem]">
-        <div ref={heroRef}>
-          <HeroSection />
-        </div>
-        <AboutUsSection />
-        <div className="w-[70%] border-t-[3px]"></div>
-        <ServicesSection />
-        <div ref={portfolioRef} className="pt-[4rem] max-md:pt-[5rem]">
-          <PortfolioSection />
-        </div>
-        <ClientsSection />
-        <ContactSection />
+    <BrowserRouter>
+      <div className="App flex flex-col gap-[0rem] items-center">
+        <Navbar setLink={setLink} link={link} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Home
+                open={open}
+                setOpen={setOpen}
+                handleOpen={handleOpen}
+                handleClose={handleClose}
+              />
+            }
+          />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Routes>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
