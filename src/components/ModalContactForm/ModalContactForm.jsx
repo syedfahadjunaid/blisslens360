@@ -2,23 +2,14 @@ import React, { useState } from "react";
 
 import logo from "../../assets/logo.png";
 
+import { useRef } from "react";
+import emailjs from "emailjs-com";
+
 const ModalContactForm = () => {
   const [name, setName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState();
 
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "fit-content",
-    bgcolor: "transparent",
-    border: "none",
-    outline: "none",
-    boxShadow: 0,
-    // borderRadius: "20px",
-    // p: 4,
-  };
+  const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,6 +18,24 @@ const ModalContactForm = () => {
       name: name,
       number: phoneNumber,
     };
+
+    emailjs
+      .sendForm(
+        // "service_z17to8s",
+        // "template_6qdkdw4",
+        form.current
+        // "8AXI-DnI3pQQixoOx"
+      )
+      .then(
+        (result) => {
+          // console.log(result.text);
+        },
+        (error) => {
+          // console.log(error.text);
+        }
+      );
+    setName("");
+    setPhoneNumber();
 
     console.log(submitData);
   };
@@ -38,7 +47,11 @@ const ModalContactForm = () => {
           The Joy of Connection: How Making Moments Matters strengthens
           Relationships
         </p>
-        <form className="flex flex-col gap-[1rem]" onSubmit={handleSubmit}>
+        <form
+          className="flex flex-col gap-[1rem]"
+          onSubmit={handleSubmit}
+          ref={form}
+        >
           <input
             className="border-[#A9A9A9] border-solid border-[1px] p-[10px] rounded-[4px] w-full"
             placeholder="Full Name"

@@ -61,12 +61,14 @@ const HeroSection = () => {
         </div>
         <div className="w-[90%] flex flex-row items-start max-md:flex-col max-md:gap-[2rem] max-md:mt-[7rem]">
           <div className="w-[50%] flex flex-col gap-[1rem] max-md:w-full">
-            <h1 className="headingFont text-[80px] text-start leading-[5rem] max-md:text-[50px] max-md:leading-[3rem]">
-              Crafting Everlasting Moments
+            <h1 className="headingFont text-[70px] text-start leading-[5rem] max-md:text-[50px] max-md:leading-[3rem]">
+              Redefining Moments to Treasure Lifetime!
             </h1>
             <p className="text-start text-[#4F4F4F]">
-              The Joy of Connection: How Making Moments Matters strengthens
-              Relationships
+              Welcome to Blisslens360! Based in Lucknow, India, we are a
+              boutique candid wedding photography studio renowned for our fun,
+              unconventional, and modern approach to capturing the stories of
+              your most special day.
             </p>
             <button
               onClick={handleOpen}

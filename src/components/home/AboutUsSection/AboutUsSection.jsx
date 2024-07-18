@@ -19,18 +19,23 @@ const AboutUsSection = () => {
             </h4>
           </div>
           <p className="text-justify text-[16px] text-[#5D5D5D]">
-            At Blisslens, we believe that every moment deserves to be captured
-            with elegance and precision. We are a team of passionate
-            photographers and videographers specializing in wedding photography,
-            fashion photoshoots, and corporate events. With a keen eye for
-            detail and a commitment to excellence, we transform your special
-            moments into lasting memories.
+            We at Blisslens360, encapsulate the beauty, emotion, and enchantment
+            of your special day. As expert wedding photographers, we understand
+            that your wedding is not merely a day but a celebration of your
+            unique love story. Let us guide you through a visual journey of your
+            most significant moments, creating an enduring legacy of your love.
           </p>
           <p className="text-justify text-[16px] text-[#5D5D5D]">
-            Blisslens was born out of a love for storytelling through the lens.
-            Founded by [Founder's Name], our journey began [X] years ago with a
-            simple mission: to create stunning visual narratives that celebrate
-            love, beauty, and life.
+            At Blisslens360, we provide extensive coverage for weddings,
+            pre-weddings, birthdays, engagements, and family gatherings. Our
+            expertise includes not only outdoor shoots but also exceptional
+            in-house services such as photo restoration and album design.
+          </p>
+          <p className="text-justify text-[16px] text-[#5D5D5D]">
+            We go beyond taking pictures—we create stories filled with joy and
+            emotion, ensuring each memory endures a lifetime. With unwavering
+            dedication and enthusiasm, we treat every client like family,
+            pouring passion into every shot.
           </p>
         </div>
         <div className="flex w-[50%] max-md:w-full">
