@@ -59,7 +59,10 @@ const Navbar = () => {
                   src={logo}
                   alt="blisslens_logo"
                   className=""
-                  onClick={() => navigate("/")}
+                  onClick={() => {
+                    navigate("/");
+                    window.scroll(0, 0);
+                  }}
                 />
                 <div className="border-solid border-l-[2px] pl-[2rem] flex gap-[2rem] items-center">
                   {location.pathname === "/" ? (
@@ -71,6 +74,7 @@ const Navbar = () => {
                       />
                       <Link
                         to={"/"}
+                        onClick={() => window.scroll(0, 0)}
                         className={
                           location.pathname === "/" ? activeStyle : "text-gray"
                         }
@@ -81,6 +85,7 @@ const Navbar = () => {
                   ) : (
                     <Link
                       to={"/"}
+                      onClick={() => window.scroll(0, 0)}
                       className={
                         location.pathname === "/"
                           ? activeStyle
@@ -99,6 +104,7 @@ const Navbar = () => {
                       />
                       <Link
                         to={"/portfolio"}
+                        onClick={() => window.scroll(0, 0)}
                         className={
                           location.pathname === "/portfolio"
                             ? activeStyle
@@ -111,6 +117,7 @@ const Navbar = () => {
                   ) : (
                     <Link
                       to={"/portfolio"}
+                      onClick={() => window.scroll(0, 0)}
                       className={
                         location.pathname === "/portfolio"
                           ? activeStyle
@@ -135,7 +142,12 @@ const Navbar = () => {
         {/* Mobile Navbar */}
         <div className="fixed top-0 w-full hidden max-md:block relative">
           <div className="fixed w-full z-20 bg-white flex items-center justify-between">
-            <img src={logo} alt="logo" className="p-[1rem] w-[200px]" />
+            <img
+              src={logo}
+              alt="logo"
+              className="p-[1rem] w-[200px]"
+              onClick={() => window.scroll(0, 0)}
+            />
             <div className="w-fit right-0 p-[1rem]">
               <Hamburger toggled={isOpen} toggle={setIsOpen} />
             </div>
@@ -152,6 +164,10 @@ const Navbar = () => {
                     />
                     <Link
                       to={"/"}
+                      onClick={() => {
+                        setIsOpen(false);
+                        window.scroll(0, 0);
+                      }}
                       className={
                         location.pathname === "/" ? activeStyle : "text-gray"
                       }
@@ -162,6 +178,10 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={"/"}
+                    onClick={() => {
+                      setIsOpen(false);
+                      window.scroll(0, 0);
+                    }}
                     className={
                       location.pathname === "/"
                         ? activeStyle
@@ -180,6 +200,10 @@ const Navbar = () => {
                     />
                     <Link
                       to={"/portfolio"}
+                      onClick={() => {
+                        setIsOpen(false);
+                        window.scroll(0, 0);
+                      }}
                       className={
                         location.pathname === "/portfolio"
                           ? activeStyle
@@ -192,6 +216,10 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={"/portfolio"}
+                    onClick={() => {
+                      setIsOpen(false);
+                      window.scroll(0, 0);
+                    }}
                     className={
                       location.pathname === "/portfolio"
                         ? activeStyle

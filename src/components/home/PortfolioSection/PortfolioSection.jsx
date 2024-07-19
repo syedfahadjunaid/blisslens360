@@ -46,7 +46,8 @@ const PortfolioSection = () => {
   const cardsData = [
     {
       cardImage: Image1,
-      cardBtnText: "Button1",
+      cardBtnText: "Aparna X Saurabh",
+      cardBtnLink: "",
       modalImages: {
         img1: img,
         img2: img,
@@ -61,7 +62,8 @@ const PortfolioSection = () => {
     },
     {
       cardImage: Image2,
-      cardBtnText: "Button2",
+      cardBtnText: "Eshan X Megha",
+      cardBtnLink: "",
       modalImages: {
         img1: img,
         img2: img,
@@ -76,7 +78,8 @@ const PortfolioSection = () => {
     },
     {
       cardImage: Image3,
-      cardBtnText: "Button3",
+      cardBtnText: "Ritika & Ashutosh",
+      cardBtnLink: "",
       modalImages: {
         img1: img,
         img2: img,
@@ -91,7 +94,8 @@ const PortfolioSection = () => {
     },
     {
       cardImage: Image4,
-      cardBtnText: "Button4",
+      cardBtnText: "Shivam X Shipra",
+      cardBtnLink: "",
       modalImages: {
         img1: img,
         img2: img,
@@ -121,12 +125,15 @@ const PortfolioSection = () => {
                 <div className="border-[1px] border-black border-solid rounded-full w-[40px] h-[40px] bg-white flex items-center justify-center">
                   <MdArrowOutward />
                 </div>
-                <button
-                  onClick={() => handleOpen(data)}
+                <a
+                  href="https://www.google.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  // onClick={() => handleOpen(data)}
                   className="bg-white bg-opacity-50 p-[1rem] rounded-full"
                 >
                   {data.cardBtnText}
-                </button>
+                </a>
               </div>
             </div>
           </div>

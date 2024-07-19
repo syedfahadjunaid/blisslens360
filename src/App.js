@@ -5,14 +5,14 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/Home/Home";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 
 function App() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  const [link, setLink] = useState("Home");
+  // const [link, setLink] = useState("Home");
 
   // const heroRef = useRef();
   // const portfolioRef = useRef();
@@ -28,10 +28,14 @@ function App() {
   //   }
   // }, [link]);
 
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <BrowserRouter>
       <div className="App flex flex-col gap-[0rem] items-center">
-        <Navbar setLink={setLink} link={link} />
+        <Navbar />
         <Routes>
           <Route
             path="/"
