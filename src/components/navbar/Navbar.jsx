@@ -1,8 +1,9 @@
 // import React from "react";
 import logo from "../../assets/logo.png";
-
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
-
+import { useLocation } from "react-router-dom";
 import linkBorderImage from "../../assets/linkBorder.png";
 import navBackgroundImage from "../../assets/navBackground.png";
 
@@ -13,10 +14,10 @@ import Modal from "@mui/material/Modal";
 import ModalContactForm from "../ModalContactForm/ModalContactForm";
 import Hamburger from "hamburger-react";
 
-const Navbar = ({ setLink, link }) => {
-  // const navigate = useNavigate();
+const Navbar = () => {
+  const navigate = useNavigate();
 
-  // const location = useLocation();
+  const location = useLocation();
 
   const style = {
     position: "absolute",
@@ -38,8 +39,7 @@ const Navbar = ({ setLink, link }) => {
 
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const activeStyle =
-    "text-yellow absolute text-center w-full h-fit cursor-pointer";
+  const activeStyle = "text-yellow absolute text-center w-full h-fit";
 
   return (
     <>
@@ -59,67 +59,66 @@ const Navbar = ({ setLink, link }) => {
                   src={logo}
                   alt="blisslens_logo"
                   className=""
-                  // onClick={() => navigate("/")}
-                  onClick={() => setLink("Home")}
+                  onClick={() => navigate("/")}
                 />
                 <div className="border-solid border-l-[2px] pl-[2rem] flex gap-[2rem] items-center">
-                  {link === "Home" ? (
-                    <div className="relative w-fit flex items-center justify-center h-full cursor-pointer">
+                  {location.pathname === "/" ? (
+                    <div className="relative w-fit flex items-center justify-center h-full">
                       <img
                         src={linkBorderImage}
                         alt="link_border"
                         className="w-[65px] h-[65px]"
                       />
-                      <div
-                        // to={"/"}
-                        onClick={() => setLink("Home")}
-                        className={link === "Home" ? activeStyle : "text-gray"}
+                      <Link
+                        to={"/"}
+                        className={
+                          location.pathname === "/" ? activeStyle : "text-gray"
+                        }
                       >
                         Home
-                      </div>
+                      </Link>
                     </div>
                   ) : (
-                    <div
-                      // to={"/"}
-                      onClick={() => setLink("Home")}
+                    <Link
+                      to={"/"}
                       className={
-                        link === "Home"
+                        location.pathname === "/"
                           ? activeStyle
-                          : "text-gray w-[65px] cursor-pointer"
+                          : "text-gray w-[65px]"
                       }
                     >
                       Home
-                    </div>
+                    </Link>
                   )}
-                  {link === "Portfolio" ? (
-                    <div className="relative w-fit flex items-center justify-center h-full cursor-pointer">
+                  {location.pathname === "/portfolio" ? (
+                    <div className="relative w-fit flex items-center justify-center h-full">
                       <img
                         src={linkBorderImage}
                         alt="link_border"
                         className="w-[65px] h-[65px]"
                       />
-                      <div
-                        // to={"/"}
-                        onClick={() => setLink("Portfolio")}
+                      <Link
+                        to={"/portfolio"}
                         className={
-                          link === "Portfolio" ? activeStyle : "text-gray "
+                          location.pathname === "/portfolio"
+                            ? activeStyle
+                            : "text-gray"
                         }
                       >
                         Portfolio
-                      </div>
+                      </Link>
                     </div>
                   ) : (
-                    <div
-                      // to={"/portfolio"}
-                      onClick={() => setLink("Portfolio")}
+                    <Link
+                      to={"/portfolio"}
                       className={
-                        link === "Portfolio"
+                        location.pathname === "/portfolio"
                           ? activeStyle
-                          : "text-gray w-[65px] cursor-pointer"
+                          : "text-gray w-[65px]"
                       }
                     >
                       Portfolio
-                    </div>
+                    </Link>
                   )}
                 </div>
               </div>
@@ -144,65 +143,63 @@ const Navbar = ({ setLink, link }) => {
           {isOpen && (
             <div className="fixed w-full flex items-center justify-center bg-white h-screen z-10 top-0">
               <div className="flex flex-col gap-[2rem] items-center">
-                {link === "Home" ? (
+                {location.pathname === "/" ? (
                   <div className="relative w-fit flex items-center justify-center h-full">
                     <img
                       src={linkBorderImage}
                       alt="link_border"
                       className="w-[65px] h-[65px]"
                     />
-                    <div
-                      // to={"/"}
-                      onClick={() => setLink("Home")}
-                      className={link === "Home" ? activeStyle : "text-gray"}
+                    <Link
+                      to={"/"}
+                      className={
+                        location.pathname === "/" ? activeStyle : "text-gray"
+                      }
                     >
                       Home
-                    </div>
+                    </Link>
                   </div>
                 ) : (
-                  <div
-                    // to={"/"}
-                    onClick={() => {
-                      setLink("Home");
-                      setIsOpen(false);
-                    }}
+                  <Link
+                    to={"/"}
                     className={
-                      link === "Home" ? activeStyle : "text-gray w-[65px]"
+                      location.pathname === "/"
+                        ? activeStyle
+                        : "text-gray w-[65px]"
                     }
                   >
                     Home
-                  </div>
+                  </Link>
                 )}
-                {link === "Portfolio" ? (
+                {location.pathname === "/portfolio" ? (
                   <div className="relative w-fit flex items-center justify-center h-full">
                     <img
                       src={linkBorderImage}
                       alt="link_border"
                       className="w-[65px] h-[65px]"
                     />
-                    <div
-                      // to={"/"}
-                      onClick={() => setLink("Portfolio")}
+                    <Link
+                      to={"/portfolio"}
                       className={
-                        link === "Portfolio" ? activeStyle : "text-gray"
+                        location.pathname === "/portfolio"
+                          ? activeStyle
+                          : "text-gray"
                       }
                     >
                       Portfolio
-                    </div>
+                    </Link>
                   </div>
                 ) : (
-                  <div
-                    // to={"/portfolio"}
-                    onClick={() => {
-                      setLink("Portfolio");
-                      setIsOpen(false);
-                    }}
+                  <Link
+                    to={"/portfolio"}
                     className={
-                      link === "Portfolio" ? activeStyle : "text-gray w-[65px]"
+                      location.pathname === "/portfolio"
+                        ? activeStyle
+                        : "text-gray w-[65px]"
                     }
                   >
                     Portfolio
-                  </div>
+                  </Link>
                 )}
               </div>
             </div>
