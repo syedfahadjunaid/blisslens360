@@ -3,7 +3,10 @@ import { MdArrowOutward } from "react-icons/md";
 import heroBackgroundImage from "../../../assets/heroBackground.png";
 import designImage5k from "../../../assets/5kDesignImage.png";
 import heroCarouselFrame from "../../../assets/heroCarouselFrame.png";
-import image1 from "../../../assets/carousel/image1.png";
+import image1 from "../../../assets/Website Pic/DSC00074.jpg";
+import image2 from "../../../assets/Website Pic/DSC04005.jpg";
+import image3 from "../../../assets/Website Pic/DSC06206.jpg";
+import image4 from "../../../assets/Website Pic/OM_01162.jpg";
 
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -86,26 +89,29 @@ const HeroSection = () => {
             />
             <CarouselProvider
               naturalSlideWidth={100}
-              naturalSlideHeight={80}
-              totalSlides={3}
-              className="w-[70%] absolute max-md:w-full"
+              naturalSlideHeight={90}
+              totalSlides={4}
+              className="w-[65%] absolute max-md:w-[90%] rounded-[10px]"
               isPlaying={true}
               interval={3000}
               infinite={true}
             >
               <Slider>
                 <Slide index={0}>
-                  <img src={image1} alt="image1" />
+                  <img src={image1} alt="image1" className="rounded-[10px]" />
                 </Slide>
                 <Slide index={1}>
-                  <img src={image1} alt="image2" />
+                  <img src={image2} alt="image2" className="rounded-[10px]" />
                 </Slide>
                 <Slide index={2}>
-                  <img src={image1} alt="image3" />
+                  <img src={image3} alt="image3" className="rounded-[10px]" />
+                </Slide>
+                <Slide index={2}>
+                  <img src={image4} alt="image4" className="rounded-[10px]" />
                 </Slide>
               </Slider>
-              <div className="w-full flex justify-center">
-                <div className="border border-solid border-[#FFBB01] w-fit flex items-center justify-center rounded-full h-[40px] w-[40px]">
+              <div className="w-full flex justify-center pt-[4px]">
+                <div className="border border-solid border-[#FFBB01] w-fit flex items-center justify-center rounded-full h-[50px] w-[50px]">
                   <ButtonBack>
                     <IoIosArrowBack />
                   </ButtonBack>

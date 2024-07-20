@@ -1,9 +1,13 @@
 // import React from "react";
 
-import Image1 from "../../assets/portfolioSection/1.jpg";
-import Image2 from "../../assets/portfolioSection/2.jpg";
-import Image3 from "../../assets/portfolioSection/3.jpg";
-import Image4 from "../../assets/portfolioSection/4.jpg";
+import Image1 from "../../assets/Website Pic/Adarsh X Akansha.jpg";
+import Image2 from "../../assets/Website Pic/Aparna X Saurabh.jpg";
+import Image3 from "../../assets/Website Pic/Eshan X Megha.jpg";
+import Image4 from "../../assets/Website Pic/Prateek X Anamika.jpg";
+import Image5 from "../../assets/Website Pic/Raunak X Saniya.jpg";
+import Image6 from "../../assets/Website Pic/Ritika X Ashutosh.jpg";
+import Image7 from "../../assets/Website Pic/Samar X Husain.jpg";
+import Image8 from "../../assets/Website Pic/Shivam X Shipra.jpg";
 
 import img from "../../assets/img.jpg";
 
@@ -43,8 +47,9 @@ const Portfolio = () => {
   const portfolioData = [
     {
       cardImage: Image1,
-      cardBtnText: "Aparna X Saurabh",
-      cardBtnLink: "",
+      cardBtnText: "Adarsh X Akansha",
+      cardBtnLink:
+        "https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ==",
       modalImages: {
         img1: img,
         img2: img,
@@ -59,72 +64,9 @@ const Portfolio = () => {
     },
     {
       cardImage: Image2,
-      cardBtnText: "Eshan X Megha",
-      cardBtnLink: "",
-      modalImages: {
-        img1: img,
-        img2: img,
-        img3: img,
-        img4: img,
-        img5: img,
-        img6: img,
-        img7: img,
-        img8: img,
-        img9: img,
-      },
-    },
-    {
-      cardImage: Image3,
-      cardBtnText: "Ritika & Ashutosh",
-      cardBtnLink: "",
-      modalImages: {
-        img1: img,
-        img2: img,
-        img3: img,
-        img4: img,
-        img5: img,
-        img6: img,
-        img7: img,
-        img8: img,
-        img9: img,
-      },
-    },
-    {
-      cardImage: Image4,
-      cardBtnText: "Shivam X Shipra",
-      cardBtnLink: "",
-      modalImages: {
-        img1: img,
-        img2: img,
-        img3: img,
-        img4: img,
-        img5: img,
-        img6: img,
-        img7: img,
-        img8: img,
-        img9: img,
-      },
-    },
-    {
-      cardImage: Image1,
       cardBtnText: "Aparna X Saurabh",
-      cardBtnLink: "",
-      modalImages: {
-        img1: img,
-        img2: img,
-        img3: img,
-        img4: img,
-        img5: img,
-        img6: img,
-        img7: img,
-        img8: img,
-        img9: img,
-      },
-    },
-    {
-      cardImage: Image2,
-      cardBtnText: "Eshan X Megha",
-      cardBtnLink: "",
+      cardBtnLink:
+        "https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ==",
       modalImages: {
         img1: img,
         img2: img,
@@ -139,72 +81,9 @@ const Portfolio = () => {
     },
     {
       cardImage: Image3,
-      cardBtnText: "Ritika & Ashutosh",
-      cardBtnLink: "",
-      modalImages: {
-        img1: img,
-        img2: img,
-        img3: img,
-        img4: img,
-        img5: img,
-        img6: img,
-        img7: img,
-        img8: img,
-        img9: img,
-      },
-    },
-    {
-      cardImage: Image4,
-      cardBtnText: "Shivam X Shipra",
-      cardBtnLink: "",
-      modalImages: {
-        img1: img,
-        img2: img,
-        img3: img,
-        img4: img,
-        img5: img,
-        img6: img,
-        img7: img,
-        img8: img,
-        img9: img,
-      },
-    },
-    {
-      cardImage: Image1,
-      cardBtnText: "Aparna X Saurabh",
-      cardBtnLink: "",
-      modalImages: {
-        img1: img,
-        img2: img,
-        img3: img,
-        img4: img,
-        img5: img,
-        img6: img,
-        img7: img,
-        img8: img,
-        img9: img,
-      },
-    },
-    {
-      cardImage: Image2,
       cardBtnText: "Eshan X Megha",
-      cardBtnLink: "",
-      modalImages: {
-        img1: img,
-        img2: img,
-        img3: img,
-        img4: img,
-        img5: img,
-        img6: img,
-        img7: img,
-        img8: img,
-        img9: img,
-      },
-    },
-    {
-      cardImage: Image3,
-      cardBtnText: "Ritika & Ashutosh",
-      cardBtnLink: "",
+      cardBtnLink:
+        "https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ==",
       modalImages: {
         img1: img,
         img2: img,
@@ -219,8 +98,77 @@ const Portfolio = () => {
     },
     {
       cardImage: Image4,
+      cardBtnText: "Prateek X Anamika",
+      cardBtnLink:
+        "https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ==",
+      modalImages: {
+        img1: img,
+        img2: img,
+        img3: img,
+        img4: img,
+        img5: img,
+        img6: img,
+        img7: img,
+        img8: img,
+        img9: img,
+      },
+    },
+    {
+      cardImage: Image5,
+      cardBtnText: "Raunak X Saniya",
+      cardBtnLink:
+        "https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ==",
+      modalImages: {
+        img1: img,
+        img2: img,
+        img3: img,
+        img4: img,
+        img5: img,
+        img6: img,
+        img7: img,
+        img8: img,
+        img9: img,
+      },
+    },
+    {
+      cardImage: Image6,
+      cardBtnText: "Ritika X Ashutosh",
+      cardBtnLink:
+        "https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ==",
+      modalImages: {
+        img1: img,
+        img2: img,
+        img3: img,
+        img4: img,
+        img5: img,
+        img6: img,
+        img7: img,
+        img8: img,
+        img9: img,
+      },
+    },
+    {
+      cardImage: Image7,
+      cardBtnText: "Samar X Husainh",
+      cardBtnLink:
+        "https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ==",
+      modalImages: {
+        img1: img,
+        img2: img,
+        img3: img,
+        img4: img,
+        img5: img,
+        img6: img,
+        img7: img,
+        img8: img,
+        img9: img,
+      },
+    },
+    {
+      cardImage: Image8,
       cardBtnText: "Shivam X Shipra",
-      cardBtnLink: "",
+      cardBtnLink:
+        "https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ==",
       modalImages: {
         img1: img,
         img2: img,
@@ -237,20 +185,20 @@ const Portfolio = () => {
 
   const renderedPortfolioCards = portfolioData?.map((data, index) => {
     return (
-      <div className="flex items-center justify-center w-dull h-full relative max-md:min-w-[90%]">
+      <div className="flex items-center justify-center w-dull h-full relative max-md:min-w-[90%] ">
         <div className="h-[90%] w-full relative flex justify-center items-center max-md:h-full">
           <img
             src={data?.cardImage}
             alt={`${data.cardBtnText}-${index}-image`}
-            className="h-full w-full"
+            className="h-full w-full rounded-[10px]"
           />
-          <div className="flex flex-col items-center gap-[1rem] absolute w-full h-full flex justify-end pb-[1rem] opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s] bg-white bg-opacity-30">
+          <div className="flex flex-col items-center gap-[1rem] absolute w-full h-full flex justify-end pb-[1rem] opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s] bg-white bg-opacity-30 max-md:opacity-100 max-md:bg-opacity-0">
             <div className="border-[1px] border-black border-solid rounded-full w-[40px] h-[40px] bg-white flex items-center justify-center">
               <MdArrowOutward />
             </div>
             <a
               // onClick={() => handleOpen(data)}
-              href="https://www.google.com"
+              href={data?.cardBtnLink}
               target="_blank"
               rel="noreferrer"
               className="bg-white bg-opacity-50 p-[1rem] rounded-full"

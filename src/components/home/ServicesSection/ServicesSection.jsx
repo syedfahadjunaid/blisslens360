@@ -1,9 +1,9 @@
 // import React from "react";
 import servicedSectionBG from "../../../assets/servicedSectionBG.png";
 
-import Image1 from "../../../assets/serviceSection/1.png";
-import Image2 from "../../../assets/serviceSection/2.png";
-import Image3 from "../../../assets/serviceSection/3.png";
+import Image1 from "../../../assets/Website Pic/Pre Wedding.jpg";
+// import Image2 from "../../../assets/serviceSection/2.png";
+import Image3 from "../../../assets/Website Pic/Wedding.jpg";
 
 import img from "../../../assets/img.jpg";
 
@@ -99,21 +99,28 @@ const ServicesSection = () => {
           </div>
           <div className="flex flex-col gap-[1rem] w-full p-[2rem] max-md:p-0">
             <div className="flex w-full gap-[1rem] max-md:flex-col">
-              <div
+              <a
+                href="https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ=="
+                target="_blank"
+                rel="noreferrer"
                 className="w-full h-full cursor-pointer relative flex items-center justify-center max-md:w-full"
-                onClick={() => handleOpen(cardsData[0])}
+                // onClick={() => handleOpen(cardsData[0])}
               >
                 <button className="bg-white bg-opacity-50 p-[1rem] rounded-full absolute">
                   Pre Wedding
                 </button>
-                <img src={Image1} alt="Image1" className="w-full h-[350px]" />
+                <img
+                  src={Image1}
+                  alt="Image1"
+                  className="w-full h-[350px] object-cover rounded-[10px]"
+                />
                 <div className="bg-white w-full h-[350px] absolute top-0 bg-opacity-0 hover:bg-opacity-20 transition ease-in-out duration-[0.5s] flex flex-col items-center justify-center">
                   <div className="w-full h-full flex justify-center items-center opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s]">
                     <img src={frameImage} alt="frameImage" className="" />
                   </div>
                 </div>
-              </div>
-              {/* <div
+              </a>
+              {/* <a
                 className="w-[35%] h-full cursor-pointer relative flex items-center justify-center max-md:w-full"
                 onClick={() => handleOpen(cardsData[1])}
               >
@@ -126,22 +133,29 @@ const ServicesSection = () => {
                     <img src={frameImage} alt="frameImage" className="" />
                   </div>
                 </div>
-              </div> */}
+              </a> */}
             </div>
-            <div
+            <a
+              href="https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ=="
+              target="_blank"
+              rel="noreferrer"
               className="w-full h-full cursor-pointer relative flex items-center justify-center"
-              onClick={() => handleOpen(cardsData[2])}
+              // onClick={() => handleOpen(cardsData[2])}
             >
               <button className="bg-white bg-opacity-50 p-[1rem] rounded-full absolute">
                 Wedding
               </button>
-              <img src={Image3} alt="Image3" className="w-full h-[350px]" />
+              <img
+                src={Image3}
+                alt="Image3"
+                className="w-full h-[350px] object-cover"
+              />
               <div className="bg-white w-full h-[350px] absolute top-0 bg-opacity-0 hover:bg-opacity-20 transition ease-in-out duration-[0.5s] flex flex-col items-center justify-center">
                 <div className="w-full h-full flex justify-center items-center opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s]">
                   <img src={frameImage} alt="frameImage" className="" />
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

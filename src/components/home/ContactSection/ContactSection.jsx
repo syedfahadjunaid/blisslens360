@@ -30,14 +30,20 @@ const ContactSection = () => {
             </p>
           </div>
           <div className="flex items-center justify-start gap-[1rem] max-md:justify-center w-full">
-            <button className="flex justify-center w-fit text-white bg-[#FFBB01] p-[1rem] rounded-[30px] flex items-center gap-[10px] max-md:p-[12px] max-md:text-[14px]">
+            <a
+              href="tel:+918948869106"
+              className="flex justify-center w-fit text-white bg-[#FFBB01] p-[1rem] rounded-[30px] flex items-center gap-[10px] max-md:p-[12px] max-md:text-[14px] cursor-pointer"
+            >
               <p>Call Us Now</p>
               <CiPhone />
-            </button>
-            <button className="flex justify-center w-fit text-white border border-[#FFBB01] p-[1rem] rounded-[30px] flex items-center gap-[10px] max-md:p-[12px] max-md:text-[14px]">
+            </a>
+            <a
+              href="mailto:blisslens360@gmail.com"
+              className="flex justify-center w-fit text-white border border-[#FFBB01] p-[1rem] rounded-[30px] flex items-center gap-[10px] max-md:p-[12px] max-md:text-[14px] cursor-pointer"
+            >
               <p>Mail Us</p>
               <CiMail />
-            </button>
+            </a>
           </div>
         </div>
         <div className="w-[30%] relative h-full max-md:hidden">

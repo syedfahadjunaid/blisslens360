@@ -31,16 +31,34 @@ const Footer = () => {
         <div className="text-[#FFFFFF] flex flex-col gap-[2rem] items-center">
           <p>Blisslens Photography & Videography</p>
           <div className="">
-            <p className="">Address: 1234 Wedding Lane, Love City, LC 56789</p>
+            <p className="">
+              Address: A2 Khushnuma Complex, Meera Bai Marg, Lucknow, India
+            </p>
             <p className="max-md:hidden">
-              Phone: <span className="text-[#FFBB01]">(123) 456-7890</span> |
-              Email: <span className="text-[#FFBB01]">info@blisslens.com</span>
+              Phone:{" "}
+              <span className="text-[#FFBB01]">
+                <a href="tel:+918948869106">+91 8948869106</a>
+              </span>{" "}
+              | Email:{" "}
+              <span className="text-[#FFBB01]">
+                <a href="mailto:blisslens360@gmail.com">
+                  blisslens360@gmail.com
+                </a>
+              </span>
             </p>
             <p className="hidden max-md:block">
-              Phone: <span className="text-[#FFBB01]">(123) 456-7890</span>
+              Phone:{" "}
+              <span className="text-[#FFBB01]">
+                <a href="tel:+918948869106">+91 8948869106</a>
+              </span>
             </p>
             <p className="hidden max-md:block">
-              Email: <span className="text-[#FFBB01]">info@blisslens.com</span>
+              Email:{" "}
+              <span className="text-[#FFBB01]">
+                <a href="mailto:blisslens360@gmail.com">
+                  blisslens360@gmail.com
+                </a>
+              </span>
             </p>
           </div>
         </div>

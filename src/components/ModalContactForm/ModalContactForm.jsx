@@ -7,37 +7,43 @@ import emailjs from "emailjs-com";
 
 const ModalContactForm = () => {
   const [name, setName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState();
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
 
   const form = useRef();
+
+  const [submitResponse, setSubmitResponse] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const submitData = {
-      name: name,
-      number: phoneNumber,
-    };
+    // const submitData = {
+    //   name: name,
+    //   number: phoneNumber,
+    // };
 
     emailjs
       .sendForm(
-        // "service_z17to8s",
-        // "template_6qdkdw4",
-        form.current
-        // "8AXI-DnI3pQQixoOx"
+        "service_yaa3fwe",
+        "template_g0anif8",
+        form.current,
+        "S_kzOiITauvZ9sKf7"
       )
       .then(
         (result) => {
-          // console.log(result.text);
+          console.log(result.text);
+          setSubmitResponse(true);
         },
         (error) => {
-          // console.log(error.text);
+          console.log(error.text);
+          setSubmitResponse(false);
         }
       );
     setName("");
-    setPhoneNumber();
+    setPhoneNumber("");
+    setEmail("");
 
-    console.log(submitData);
+    // console.log(submitData);
   };
   return (
     <div className="w-[500px] max-md:w-[350px] h-full flex flex-col gap-[1rem] rounded-[10px] bg-gradient-to-r from-[#FFBB01] to-[#000000] p-[4px]">
@@ -47,44 +53,64 @@ const ModalContactForm = () => {
           The Joy of Connection: How Making Moments Matters strengthens
           Relationships
         </p>
-        <form
-          className="flex flex-col gap-[1rem]"
-          onSubmit={handleSubmit}
-          ref={form}
-        >
-          <input
-            className="border-[#A9A9A9] border-solid border-[1px] p-[10px] rounded-[4px] w-full"
-            placeholder="Full Name"
-            onChange={(e) => setName(e.target.value)}
-            type="text"
-            value={name}
-            required
-          />
-          <input
-            className="border-[#A9A9A9] border-solid border-[1px] p-[10px] rounded-[4px] w-full"
-            placeholder="Number"
-            type="number"
-            value={phoneNumber}
-            required
-            onChange={(e) => setPhoneNumber(e.target.value)}
-          />
-          <button className="rounded-[4px] border-black border-solid border-[1px] p-[10px] w-full">
-            Book Now
-          </button>
-        </form>
+        {submitResponse === false ? (
+          <form
+            className="flex flex-col gap-[1rem]"
+            onSubmit={handleSubmit}
+            ref={form}
+          >
+            <input
+              className="border-[#A9A9A9] border-solid border-[1px] p-[10px] rounded-[4px] w-full"
+              placeholder="Full Name"
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              value={name}
+              required
+              name="name"
+            />
+            <input
+              className="border-[#A9A9A9] border-solid border-[1px] p-[10px] rounded-[4px] w-full"
+              placeholder="Email"
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+              value={email}
+              required
+              name="email"
+            />
+            <input
+              className="border-[#A9A9A9] border-solid border-[1px] p-[10px] rounded-[4px] w-full"
+              placeholder="Phone Number"
+              // type="number"
+              value={phoneNumber}
+              minLength={10}
+              maxLength={10}
+              required
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, "");
+                setPhoneNumber(value);
+              }}
+              name="number"
+            />
+            <button className="rounded-[4px] border-black border-solid border-[1px] p-[10px] w-full">
+              Book Now
+            </button>
+          </form>
+        ) : (
+          <p className="text-[30px] text-green">Message Sent Successfully!</p>
+        )}
         <div className="w-[100%] border-t my-[1rem]"></div>
         <div className="w-full flex justify-between items-center text-[#A9A9A9]">
           <a
             className="cursor-pointer hover:underline max-md:text-[10px]"
-            href="tel:+9190445423535"
+            href="tel:+918948869106"
           >
-            +91 90445423535
+            +91 8948869106
           </a>
           <a
             className="cursor-pointer hover:underline max-md:text-[10px]"
-            href="mailto:email@gmail.com"
+            href="mailto:blisslens360@gmail.com"
           >
-            email@gmail.com
+            blisslens360@gmail.com
           </a>
         </div>
       </div>

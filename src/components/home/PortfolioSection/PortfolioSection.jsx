@@ -4,10 +4,10 @@ import LeafLImage from "../../../assets/leafL.png";
 import LeafRImage from "../../../assets/leafR.png";
 import HeadingImage from "../../../assets/headingImage2.png";
 
-import Image1 from "../../../assets/portfolioSection/1.jpg";
-import Image2 from "../../../assets/portfolioSection/2.jpg";
-import Image3 from "../../../assets/portfolioSection/3.jpg";
-import Image4 from "../../../assets/portfolioSection/4.jpg";
+import Image1 from "../../../assets/Website Pic/Aparna X Saurabh.jpg";
+import Image2 from "../../../assets/Website Pic/Eshan X Megha.jpg";
+import Image3 from "../../../assets/Website Pic/Ritika X Ashutosh.jpg";
+import Image4 from "../../../assets/Website Pic/Shivam X Shipra.jpg";
 
 import * as React from "react";
 import Box from "@mui/material/Box";
@@ -114,19 +114,19 @@ const PortfolioSection = () => {
     return (
       <React.Fragment key={index + data?.cardBtnText}>
         {index % 2 === 0 ? (
-          <div className="flex items-start w-[25%] h-full relative max-md:min-w-[90%]">
+          <div className="flex items-start w-[25%] h-full relative max-md:min-w-[80%]">
             <div className="h-[90%] w-full relative flex justify-center items-center max-md:h-full">
               <img
                 src={data?.cardImage}
                 alt={`${data.cardBtnText}-${index}-image`}
-                className="h-full w-full"
+                className="h-full w-full rounded-[10px]"
               />
-              <div className="flex flex-col items-center gap-[1rem] absolute w-full h-full flex justify-end pb-[1rem] opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s] bg-white bg-opacity-30">
+              <div className="flex flex-col items-center gap-[1rem] absolute w-full h-full flex justify-end pb-[1rem] opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s] bg-white bg-opacity-30 max-md:opacity-100 max-md:bg-opacity-0">
                 <div className="border-[1px] border-black border-solid rounded-full w-[40px] h-[40px] bg-white flex items-center justify-center">
                   <MdArrowOutward />
                 </div>
                 <a
-                  href="https://www.google.com"
+                  href="https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ=="
                   target="_blank"
                   rel="noreferrer"
                   // onClick={() => handleOpen(data)}
@@ -138,23 +138,26 @@ const PortfolioSection = () => {
             </div>
           </div>
         ) : (
-          <div className="flex items-end w-[25%] h-full relative max-md:w-full max-md:min-w-full max-md:min-w-[90%]">
+          <div className="flex items-end w-[25%] h-full relative max-md:w-full max-md:min-w-full max-md:min-w-[80%]">
             <div className="h-[90%] w-full relative flex justify-center items-center max-md:h-full">
               <img
                 src={data?.cardImage}
                 alt={`${data.cardBtnText}-${index}-image`}
-                className="h-full w-full"
+                className="h-full w-full rounded-[10px]"
               />
-              <div className="flex flex-col items-center gap-[1rem] absolute w-full h-full flex justify-end pb-[1rem] opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s] bg-white bg-opacity-30">
+              <div className="flex flex-col items-center gap-[1rem] absolute w-full h-full flex justify-end pb-[1rem] opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s] bg-white bg-opacity-30 max-md:opacity-100 max-md:bg-opacity-0">
                 <div className="border-[1px] border-black border-solid rounded-full w-[40px] h-[40px] bg-white flex items-center justify-center">
                   <MdArrowOutward />
                 </div>
-                <button
-                  onClick={() => handleOpen(data)}
+                <a
+                  href="https://www.instagram.com/blisslens360?igsh=MW1hc21xeXczanV5OQ=="
+                  target="_blank"
+                  rel="noreferrer"
+                  // onClick={() => handleOpen(data)}
                   className="bg-white bg-opacity-50 p-[1rem] rounded-full"
                 >
                   {data.cardBtnText}
-                </button>
+                </a>
               </div>
             </div>
           </div>
