@@ -148,7 +148,7 @@ const ServicesSection = () => {
               <img
                 src={Image3}
                 alt="Image3"
-                className="w-full h-[350px] object-cover"
+                className="w-full h-[350px] object-cover rounded-[10px]"
               />
               <div className="bg-white w-full h-[350px] absolute top-0 bg-opacity-0 hover:bg-opacity-20 transition ease-in-out duration-[0.5s] flex flex-col items-center justify-center">
                 <div className="w-full h-full flex justify-center items-center opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s]">
