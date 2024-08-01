@@ -111,7 +111,7 @@ const HeroSection = () => {
                 </Slide>
               </Slider>
               <div className="w-full flex justify-center pt-[4px]">
-                <div className="border border-solid border-[#FFBB01] w-fit flex items-center justify-center rounded-full h-[50px] w-[50px]">
+                <div className="border border-solid border-[#FFBB01] flex items-center justify-center rounded-full h-[50px] w-[50px]">
                   <ButtonBack>
                     <IoIosArrowBack />
                   </ButtonBack>

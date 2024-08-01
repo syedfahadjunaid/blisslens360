@@ -138,7 +138,7 @@ const PortfolioSection = () => {
             </div>
           </div>
         ) : (
-          <div className="flex items-end w-[25%] h-full relative max-md:w-full max-md:min-w-full max-md:min-w-[80%]">
+          <div className="flex items-end w-[25%] h-full relative max-md:w-full max-md:min-w-[80%]">
             <div className="h-[90%] w-full relative flex justify-center items-center max-md:h-full">
               <img
                 src={data?.cardImage}

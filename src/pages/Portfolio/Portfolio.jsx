@@ -183,6 +183,10 @@ const Portfolio = () => {
     },
   ];
 
+  React.useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   const renderedPortfolioCards = portfolioData?.map((data, index) => {
     return (
       <div className="flex items-center justify-center w-dull h-full relative max-md:min-w-[90%] ">

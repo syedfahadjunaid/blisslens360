@@ -7,6 +7,9 @@ import ClientsSection from "../../components/home/ClientsSection/ClientsSection"
 import ContactSection from "../../components/home/ContactSection/ContactSection";
 
 const Home = () => {
+  React.useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <div className="w-full flex flex-col items-center gap-[2rem]">
       <HeroSection />
