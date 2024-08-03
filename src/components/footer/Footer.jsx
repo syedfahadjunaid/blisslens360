@@ -35,11 +35,11 @@ const Footer = () => {
               Address: A2 Khushnuma Complex, Meera Bai Marg, Lucknow, India
             </p>
             <p className="max-md:hidden">
-              Phone:{" "}
+              Phone:
               <span className="text-[#FFBB01]">
-                <a href="tel:+918948869106">+91 8948869106</a>
+                <a href="tel:+917880904742">+91 7880904742</a>
               </span>{" "}
-              | Email:{" "}
+              | Email:
               <span className="text-[#FFBB01]">
                 <a href="mailto:blisslens360@gmail.com">
                   blisslens360@gmail.com
@@ -47,13 +47,13 @@ const Footer = () => {
               </span>
             </p>
             <p className="hidden max-md:block">
-              Phone:{" "}
+              Phone:
               <span className="text-[#FFBB01]">
-                <a href="tel:+918948869106">+91 8948869106</a>
+                <a href="tel:+917880904742">+91 7880904742</a>
               </span>
             </p>
             <p className="hidden max-md:block">
-              Email:{" "}
+              Email:
               <span className="text-[#FFBB01]">
                 <a href="mailto:blisslens360@gmail.com">
                   blisslens360@gmail.com

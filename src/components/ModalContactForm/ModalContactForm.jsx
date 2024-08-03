@@ -102,9 +102,9 @@ const ModalContactForm = () => {
         <div className="w-full flex justify-between items-center text-[#A9A9A9]">
           <a
             className="cursor-pointer hover:underline max-md:text-[10px]"
-            href="tel:+918948869106"
+            href="tel:+917880904742"
           >
-            +91 8948869106
+            +91 7880904742
           </a>
           <a
             className="cursor-pointer hover:underline max-md:text-[10px]"

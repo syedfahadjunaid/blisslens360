@@ -47,7 +47,7 @@ const HeroSection = () => {
   return (
     <>
       <div
-        className="w-full flex flex-col items-center"
+        className="w-full flex flex-col items-center pb-[3rem]"
         style={{
           background: `url('${heroBackgroundImage}')`,
           backgroundRepeat: "no-repeat",
@@ -55,12 +55,12 @@ const HeroSection = () => {
           backgroundPositionY: "8rem",
         }}
       >
-        <div className="flex justify-end w-full mt-[5rem] pr-[2rem] max-md:hidden">
-          <div className="flex flex-col headingFont text-start">
+        <div className="flex justify-end w-full mt-[9rem] pr-[2rem] max-md:hidden">
+          {/* <div className="flex flex-col headingFont text-start">
             <p className="text-[#FFBB00] pl-[10px]">5k+</p>
             <p className="text-[#6D6D6D] pl-[10px]">weddings</p>
             <img src={designImage5k} alt="designImage" className="w-[100px]" />
-          </div>
+          </div> */}
         </div>
         <div className="w-[90%] flex flex-row items-start max-md:flex-col max-md:gap-[2rem] max-md:mt-[7rem]">
           <div className="w-[50%] flex flex-col gap-[1rem] max-md:w-full">
@@ -123,7 +123,7 @@ const HeroSection = () => {
             </CarouselProvider>
           </div>
         </div>
-        <div className="w-full flex px-[2rem] items-center max-md:flex-col max-md:gap-[1rem]">
+        {/* <div className="w-full flex px-[2rem] items-center max-md:flex-col max-md:gap-[1rem]">
           <div className="flex justify-center w-[50%]">
             <div className="flex flex-col headingFont text-start">
               <p className="text-[#FFBB00] pl-[10px]">3k+</p>
@@ -141,7 +141,7 @@ const HeroSection = () => {
               <FiArrowDownRight />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Modal
         open={open}

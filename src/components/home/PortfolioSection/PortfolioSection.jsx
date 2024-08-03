@@ -119,7 +119,7 @@ const PortfolioSection = () => {
               <img
                 src={data?.cardImage}
                 alt={`${data.cardBtnText}-${index}-image`}
-                className="h-full w-full rounded-[10px]"
+                className="h-full w-full rounded-[10px] object-cover"
               />
               <div className="flex flex-col items-center gap-[1rem] absolute w-full h-full flex justify-end pb-[1rem] opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s] bg-white bg-opacity-30 max-md:opacity-100 max-md:bg-opacity-0">
                 <div className="border-[1px] border-black border-solid rounded-full w-[40px] h-[40px] bg-white flex items-center justify-center">
@@ -143,7 +143,7 @@ const PortfolioSection = () => {
               <img
                 src={data?.cardImage}
                 alt={`${data.cardBtnText}-${index}-image`}
-                className="h-full w-full rounded-[10px]"
+                className="h-full w-full rounded-[10px] object-cover"
               />
               <div className="flex flex-col items-center gap-[1rem] absolute w-full h-full flex justify-end pb-[1rem] opacity-0 hover:opacity-100 transition ease-in-out duration-[0.5s] bg-white bg-opacity-30 max-md:opacity-100 max-md:bg-opacity-0">
                 <div className="border-[1px] border-black border-solid rounded-full w-[40px] h-[40px] bg-white flex items-center justify-center">
