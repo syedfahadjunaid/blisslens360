@@ -13,7 +13,7 @@ import image6 from "../../../assets/Website Pic/Ritika X Ashutosh.jpg";
 import image7 from "../../../assets/Website Pic/Samar X Husain.jpg";
 import image8 from "../../../assets/Website Pic/Shivam X Shipra.jpg";
 import image9 from "../../../assets/Website Pic/Adarsh X Akansha.jpg";
-import { width } from "@mui/system";
+// import { width } from "@mui/system";
 
 const ClientsSection = () => {
   const style = {
@@ -54,10 +54,14 @@ const ClientsSection = () => {
               <div className="grid grid-cols-2 gap-[1rem] max-md:grid-cols-1">
                 <div className="flex flex-col items-start bg-white p-[1rem] max-md:p-[10px]">
                   <h4 className="text-[#FFBB00]">Adarsh X Akansha</h4>
-                  <p className="text-[#5D5D5D] text-justify text-[10px] max-md:text-start">
-                    Blisslens captured the essence of our wedding day perfectly.
-                    Every photo and video reflects the joy, love, and beauty of
-                    our special day
+                  <p className="text-[500] text-[12px] text-start pb-[2px]">
+                    Capturing Our Perfect Day
+                  </p>
+                  <p className="text-[#5D5D5D] text-start text-[10px] max-md:text-start">
+                    "Bliss Lens 360 truly captured the magic of our wedding day!
+                    The photos and videos are absolutely stunning, and we
+                    couldn't have asked for a better team to work with. Thank
+                    you for preserving our memories so beautifully!"
                   </p>
                   <p
                     onClick={() =>
@@ -65,6 +69,7 @@ const ClientsSection = () => {
                         <img
                           className="w-full h-full object-cover object-[center_40%] rounded-[10px]"
                           src={image1}
+                          alt="Adarsh X Akansha"
                         />
                       )
                     }
@@ -75,10 +80,14 @@ const ClientsSection = () => {
                 </div>
                 <div className="flex flex-col items-start bg-white p-[1rem]">
                   <h4 className="text-[#FFBB00]">Aparna X Saurabh</h4>
-                  <p className="text-[#5D5D5D] text-justify text-[10px] max-md:text-start">
-                    Blisslens captured the essence of our wedding day perfectly.
-                    Every photo and video reflects the joy, love, and beauty of
-                    our special day
+                  <p className="text-[500] text-[12px] text-start pb-[2px]">
+                    Incredible Wedding Photos and Videos
+                  </p>
+                  <p className="text-[#5D5D5D] text-start text-[10px] max-md:text-start">
+                    "We are beyond thrilled with the work Bliss Lens 360 did for
+                    our wedding. Their photographers and videographers were
+                    professional, creative, and attentive. The final product was
+                    nothing short of amazing. Highly recommend!"
                   </p>
                   <p
                     onClick={() =>
@@ -86,6 +95,7 @@ const ClientsSection = () => {
                         <img
                           className="w-full h-full object-cover object-[center_60%] rounded-[10px]"
                           src={image2}
+                          alt="Aparna X Saurabh"
                         />
                       )
                     }
@@ -97,10 +107,14 @@ const ClientsSection = () => {
               </div>
               <div className="flex flex-col items-start bg-white p-[1rem]">
                 <h4 className="text-[#FFBB00] text-[24px]">Eshan X Megha</h4>
-                <p className="text-[#5D5D5D] text-justify max-md:text-start">
-                  Blisslens captured the essence of our wedding day perfectly.
-                  Every photo and video reflects the joy, love, and beauty of
-                  our special day
+                <p className="text-[500] text-start pb-[2px]">
+                  Exceptional Wedding Coverage
+                </p>
+                <p className="text-[#5D5D5D] text-start max-md:text-start">
+                  "Bliss Lens 360 was phenomenal! They captured every special
+                  moment of our wedding day with such artistry. The photos and
+                  videos are simply breathtaking. We are so grateful for their
+                  amazing work!"
                 </p>
                 <p
                   onClick={() =>
@@ -108,6 +122,7 @@ const ClientsSection = () => {
                       <img
                         className="w-full h-full object-cover object-[center_40%] rounded-[10px]"
                         src={image3}
+                        alt="Eshan X Megha"
                       />
                     )
                   }
@@ -122,10 +137,14 @@ const ClientsSection = () => {
                 <h4 className="text-[#FFBB00] text-[24px]">
                   Prateek X Anamika
                 </h4>
-                <p className="text-[#5D5D5D] text-justify max-md:text-start">
-                  Blisslens captured the essence of our wedding day perfectly.
-                  Every photo and video reflects the joy, love, and beauty of
-                  our special day
+                <p className="text-[500] text-start pb-[2px]">
+                  Professional and Talented
+                </p>
+                <p className="text-[#5D5D5D] text-start max-md:text-start">
+                  "The team at Bliss Lens 360 exceeded our expectations. They
+                  were professional, punctual, and incredibly talented. The
+                  wedding photos and videos are of exceptional quality, and we
+                  couldn't be happier with the results."
                 </p>
                 <p
                   onClick={() =>
@@ -133,6 +152,7 @@ const ClientsSection = () => {
                       <img
                         className="w-full h-full object-cover object-[center_70%] rounded-[10px]"
                         src={image4}
+                        alt="Prateek X Anamika"
                       />
                     )
                   }
@@ -144,10 +164,14 @@ const ClientsSection = () => {
               <div className="grid grid-cols-2 gap-[1rem] max-md:grid-cols-1">
                 <div className="flex flex-col items-start bg-white p-[1rem]">
                   <h4 className="text-[#FFBB00]">Raunak X Saniya</h4>
-                  <p className="text-[#5D5D5D] text-justify text-[10px] max-md:text-start">
-                    Blisslens captured the essence of our wedding day perfectly.
-                    Every photo and video reflects the joy, love, and beauty of
-                    our special day
+                  <p className="text-[500] text-[12px] text-start pb-[2px]">
+                    A Dream Come True
+                  </p>
+                  <p className="text-[#5D5D5D] text-start text-[10px] max-md:text-start">
+                    "Hiring Bliss Lens 360 was one of the best decisions we made
+                    for our wedding. Their team was so easy to work with and
+                    made us feel comfortable throughout the day. The photos and
+                    videos are absolutely gorgeous!"
                   </p>
                   <p
                     onClick={() =>
@@ -155,6 +179,7 @@ const ClientsSection = () => {
                         <img
                           className="w-full h-full object-cover object-[center_47%] rounded-[10px]"
                           src={image5}
+                          alt="Raunak X Saniya"
                         />
                       )
                     }
@@ -165,10 +190,14 @@ const ClientsSection = () => {
                 </div>
                 <div className="flex flex-col items-start bg-white p-[1rem]">
                   <h4 className="text-[#FFBB00]">Ritika X Ashutosh</h4>
-                  <p className="text-[#5D5D5D] text-justify text-[10px] max-md:text-start">
-                    Blisslens captured the essence of our wedding day perfectly.
-                    Every photo and video reflects the joy, love, and beauty of
-                    our special day
+                  <p className="text-[500] text-[12px] text-start pb-[2px]">
+                    Unforgettable Wedding Moments
+                  </p>
+                  <p className="text-[#5D5D5D] text-start text-[10px] max-md:text-start">
+                    "Bliss Lens 360 captured our wedding day perfectly. The team
+                    was professional and creative, and they didn't miss a single
+                    detail. We love our photos and videos and will cherish them
+                    forever!"
                   </p>
                   <p
                     onClick={() =>
@@ -176,6 +205,7 @@ const ClientsSection = () => {
                         <img
                           className="w-full h-full object-cover object-[center_35%] rounded-[10px]"
                           src={image6}
+                          alt="Ritika X Ashutosh"
                         />
                       )
                     }
@@ -190,10 +220,14 @@ const ClientsSection = () => {
               <div className="grid grid-cols-2 gap-[1rem] max-md:grid-cols-1">
                 <div className="flex flex-col items-start bg-white p-[1rem] max-md:p-[10px]">
                   <h4 className="text-[#FFBB00]">Samar X Husain</h4>
-                  <p className="text-[#5D5D5D] text-justify text-[10px] max-md:text-start">
-                    Blisslens captured the essence of our wedding day perfectly.
-                    Every photo and video reflects the joy, love, and beauty of
-                    our special day
+                  <p className="text-[500] text-[12px] text-start pb-[2px]">
+                    Wonderful Experience!
+                  </p>
+                  <p className="text-[#5D5D5D] text-start text-[10px] max-md:text-start">
+                    "Bliss Lens 360 made our wedding day even more special with
+                    their incredible photography and videography. The team was
+                    friendly, professional, and so talented. The end result was
+                    beautiful and exceeded our expectations!"
                   </p>
                   <p
                     onClick={() =>
@@ -201,6 +235,7 @@ const ClientsSection = () => {
                         <img
                           className="w-full h-full object-cover object-[center_30%] rounded-[10px]"
                           src={image7}
+                          alt="Samar X Husain"
                         />
                       )
                     }
@@ -211,10 +246,14 @@ const ClientsSection = () => {
                 </div>
                 <div className="flex flex-col items-start bg-white p-[1rem]">
                   <h4 className="text-[#FFBB00]">Shivam X Shipra</h4>
-                  <p className="text-[#5D5D5D] text-justify text-[10px] max-md:text-start">
-                    Blisslens captured the essence of our wedding day perfectly.
-                    Every photo and video reflects the joy, love, and beauty of
-                    our special day
+                  <p className="text-[500] text-[12px] text-start pb-[2px]">
+                    Highly Recommend for Weddings
+                  </p>
+                  <p className="text-[#5D5D5D] text-start text-[10px] max-md:text-start">
+                    "We couldn't be happier with Bliss Lens 360. They did an
+                    outstanding job capturing our wedding day. The photos and
+                    videos are stunning, and the team was an absolute pleasure
+                    to work with. Highly recommend their services!"
                   </p>
                   <p
                     onClick={() =>
@@ -222,6 +261,7 @@ const ClientsSection = () => {
                         <img
                           className="w-full h-full object-cover object-[center_60%] rounded-[10px]"
                           src={image8}
+                          alt="Shivam X Shipra"
                         />
                       )
                     }
@@ -233,10 +273,14 @@ const ClientsSection = () => {
               </div>
               <div className="flex flex-col items-start bg-white p-[1rem]">
                 <h4 className="text-[#FFBB00] text-[24px]">Adarsh X Akansha</h4>
-                <p className="text-[#5D5D5D] text-justify max-md:text-start">
-                  Blisslens captured the essence of our wedding day perfectly.
-                  Every photo and video reflects the joy, love, and beauty of
-                  our special day
+                <p className="text-[500] text-start pb-[2px]">
+                  Best Decision for Our Wedding
+                </p>
+                <p className="text-[#5D5D5D] text-start max-md:text-start">
+                  "Choosing Bliss Lens 360 for our wedding photography and
+                  videography was the best decision we made. They captured every
+                  moment beautifully, and the quality of their work is
+                  exceptional. We are so grateful for their amazing service!"
                 </p>
                 <p
                   onClick={() =>
@@ -244,6 +288,7 @@ const ClientsSection = () => {
                       <img
                         className="w-full h-full object-cover object-[center_40%] rounded-[10px]"
                         src={image9}
+                        alt="Adarsh X Akansha"
                       />
                     )
                   }

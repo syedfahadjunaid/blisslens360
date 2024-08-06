@@ -10,38 +10,38 @@ import Image3 from "../../../assets/Website Pic/Ritika X Ashutosh.jpg";
 import Image4 from "../../../assets/Website Pic/Shivam X Shipra.jpg";
 
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
+// import Box from "@mui/material/Box";
+// import Modal from "@mui/material/Modal";
 
-import ModalPortfolio from "../../ModalPortfolio/ModalPortfolio";
+// import ModalPortfolio from "../../ModalPortfolio/ModalPortfolio";
 
 import { MdArrowOutward } from "react-icons/md";
 import img from "../../../assets/img.jpg";
 
 const PortfolioSection = () => {
-  const style = {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "80%",
-    height: "80%",
-    bgcolor: "transparent",
-    border: "none",
-    outline: "none",
-    boxShadow: 0,
-    // borderRadius: "20px",
-    // p: 4,
-  };
+  // const style = {
+  //   position: "absolute",
+  //   top: "50%",
+  //   left: "50%",
+  //   transform: "translate(-50%, -50%)",
+  //   width: "80%",
+  //   height: "80%",
+  //   bgcolor: "transparent",
+  //   border: "none",
+  //   outline: "none",
+  //   boxShadow: 0,
+  //   // borderRadius: "20px",
+  //   // p: 4,
+  // };
 
-  const [data, setData] = React.useState();
+  // const [data, setData] = React.useState();
 
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = (newData) => {
-    setOpen(true);
-    setData(newData);
-  };
-  const handleClose = () => setOpen(false);
+  // const [open, setOpen] = React.useState(false);
+  // const handleOpen = (newData) => {
+  //   setOpen(true);
+  //   setData(newData);
+  // };
+  // const handleClose = () => setOpen(false);
 
   const cardsData = [
     {
@@ -207,7 +207,7 @@ const PortfolioSection = () => {
           <img src={HeadingImage} alt="HeadingImage" />
         </div>
       </div>
-      <Modal
+      {/* <Modal
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
@@ -216,7 +216,7 @@ const PortfolioSection = () => {
         <Box sx={style}>
           <ModalPortfolio data={data} />
         </Box>
-      </Modal>
+      </Modal> */}
     </>
   );
 };
