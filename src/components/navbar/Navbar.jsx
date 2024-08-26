@@ -146,7 +146,10 @@ const Navbar = () => {
               src={logo}
               alt="logo"
               className="p-[1rem] w-[200px]"
-              onClick={() => window.scroll(0, 0)}
+              onClick={() => {
+                navigate("/");
+                window.scroll(0, 0);
+              }}
             />
             <div className="w-fit right-0 p-[1rem]">
               <Hamburger toggled={isOpen} toggle={setIsOpen} />
